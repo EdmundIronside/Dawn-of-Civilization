@@ -143,6 +143,7 @@ tCapitals = (
 (62, 53), # Berlin
 (27, 46), # Washington
 (34, 11), # Buenos Aires
+(68, 11), # Ulundi
 (41, 18), # Rio de Janeiro
 (30, 52), # Montreal
 )

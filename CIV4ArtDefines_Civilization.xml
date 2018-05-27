@@ -211,12 +211,6 @@
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_ZULU</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Spain.dds,Art/Interface/Buttons/Warlords_Atlas_2.dds,6,1</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_ZuluShield.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_INDEPENDENT</Type>
 			<Button>,Art/Interface/Buttons/Civilizations/Independent.dds,Art/Interface/Buttons/Warlords_Atlas_2.dds,7,1</Button>
 			<Path>Art/Interface/TeamColor/FlagDECAL_X.dds</Path>
@@ -327,7 +321,7 @@
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_ZULU</Type>
 			<Button>Art/Interface/Buttons/Civilizations/Zulu.dds</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Globe.dds</Path>
+			<Path>Art/Interface/TeamColor/FlagDECAL_ZuluShield.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>

@@ -552,3 +552,33 @@ class UniquePowers:
 	def mughalUP(self, city, iBuilding):
 		iCost = gc.getPlayer(iMughals).getBuildingProductionNeeded(iBuilding)
 		city.changeCulture(iMughals, iCost / 2, True)
+		
+		#------------------ZULU U.P.-------------------
+
+	def zuluUP(self, argsList): #Real Slavery by Sevo
+		if not pZzulu.isAlive(): return
+		if utils.isReborn(iZulu): return
+		
+		pWinningUnit, pLosingUnit = argsList
+		
+		iWinningPlayer = pWinningUnit.getOwner()
+		pWinningPlayer = gc.getPlayer(iWinningPlayer)
+		
+		iLosingPlayer = pLosingUnit.getOwner()
+		iLosingUnit = pLosingUnit.getUnitType()
+		
+		if iWinningPlayer != iZulu:
+			return
+			
+
+		# Only enslave land units!!
+		if pLosingUnit.isAnimal() or not (pLosingUnit.getDomainType() == DomainTypes.DOMAIN_LAND and gc.getUnitInfo(iLosingUnit).getCombat() > 0):
+			return
+		
+		iRandom = gc.getGame().getSorenRandNum(100, 'capture chance')
+		if iRandom < 20:
+			pNewUnit = pWinningPlayer.initUnit(iZuluRifleman, pWinningUnit.getX(), pWinningUnit.getY(), UnitAITypes.UNITAI_ZuluRifleman, DirectionTypes.DIRECTION_SOUTH)
+			CyInterface().addMessage(iWinningPlayer, True, 15, CyTranslator().getText("TXT_KEY_UP_ZULU_WIN", ()), 'SND_REVOLTEND', 1, 'Art/Units/kongolese_pombos/button_pombospombos/button_pombos.dds', ColorTypes(8), pWinningUnit.getX(), pWinningUnit.getY(), True, True)
+			CyInterface().addMessage(iLosingPlayer, True, 15, CyTranslator().getText("TXT_KEY_UP_ZULU_LOSE", ()), 'SND_REVOLTEND', 1, 'Art/Units/kongolese_pombos/button_pombos.dds', ColorTypes(7), pWinningUnit.getX(), pWinningUnit.getY(), True, True)
+			if pLosingUnit.getOwner() not in lCivGroups[5] and pLosingUnit.getOwner() < iNumPlayers: # old world civs now
+				data.iZuluRifleman += 1
