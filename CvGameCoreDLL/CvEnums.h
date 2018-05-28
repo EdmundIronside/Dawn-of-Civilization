@@ -1225,6 +1225,7 @@ enum LeaderHeadTypes			// Exposed to Python
 	KHOSROW,
 	BUMIN,
 	TAMERLANE,
+	SHAKA,
 	NUM_LEADERHEADS
 };
 
@@ -1342,6 +1343,7 @@ enum PlayerTypes				// Exposed to Python
 	GERMANY,
 	AMERICA,
 	ARGENTINA,
+	ZULU,
 	BRAZIL,
 	CANADA,
 	INDEPENDENT,
