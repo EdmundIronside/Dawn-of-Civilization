@@ -171,8 +171,8 @@ tNCAmericaTL = (3, 33)
 tNCAmericaBR = (37, 63)
 
 # third Zulu goal: control South Africa in 1900 AD
-tSAfricaTLAfricaTL = (61, 10)
-tSAfricaBR = (72, 21)
+tSouthAfricaTL = (61, 10)
+tSouthAfricaBR = (72, 21)
 
 # first Colombian goal: allow no European civilizations in Peru, Gran Colombia, Guayanas and the Caribbean in 1870 AD
 tPeruTL = (25, 16)
@@ -1412,7 +1412,7 @@ def checkTurn(iGameTurn, iPlayer):
 			expire(iZulu, 0)
 			
 		# second goal: have 10 Impi in 1875 AD
-		if isPossible(iEngland, 1):
+		if iGameTurn == getTurnForYear(1875):
 			iZuluImpi = 0
 			iZuluImpi += pZulu.getUnitClassCount(gc.getUnitInfo(iImpi).getUnitClassType())
 			
@@ -1424,7 +1424,7 @@ def checkTurn(iGameTurn, iPlayer):
 			
 		# Control all South Africa in 1900 AD
 		if iGameTurn == getTurnForYear(1900):
-				if isControlled(iZulu, utils.getPlotList(tSAfricaTL, tSAfricaBR)):
+				if isControlled(iZulu, utils.getPlotList(tSouthAfricaTL, tSouthAfricaBR)):
 					win(iZulu, 2)
 				else:
 					lose(iZulu, 2)

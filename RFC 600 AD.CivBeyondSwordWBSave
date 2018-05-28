@@ -9349,7 +9349,7 @@ BeginPlot
 		CityPopulation=2
 		BuildingType=BUILDING_MAYAN_BALL_COURT
 		BuildingType=BUILDING_TEMPLE_OF_KUKULKAN
-		Player47Culture=10, (Native)
+		Player48Culture=10, (Native)
 	EndCity
 EndPlot
 BeginPlot
@@ -23101,7 +23101,7 @@ BeginPlot
 		CityOwner=45, (Independent)
 		CityName=Tripolis
 		CityPopulation=2
-		Player45Culture=10, (Independent)
+		Player46Culture=10, (Independent)
 	EndCity
 EndPlot
 BeginPlot
@@ -23186,7 +23186,7 @@ BeginPlot
 		ReligionType=RELIGION_JUDAISM
 		ReligionType=RELIGION_CATHOLICISM
 		HolyCityReligionType=RELIGION_CATHOLICISM
-		Player46Culture=100, (Independent2)
+		Player47Culture=100, (Independent2)
 	EndCity
 EndPlot
 BeginPlot
@@ -24791,7 +24791,7 @@ BeginPlot
 		cityowner=46, (Independent)
 		CityName=Hesperides
 		CityPopulation=2
-		Player45Culture=10, (Independent)
+		Player46Culture=10, (Independent)
 	EndCity
 EndPlot
 BeginPlot
@@ -28073,7 +28073,7 @@ BeginPlot
 		CityPopulation=2
 		BuildingType=BUILDING_ETHIOPIAN_STELE
 		ReligionType=RELIGION_ORTHODOXY
-		Player46Culture=50, (Independent2)
+		Player47Culture=50, (Independent2)
 	EndCity
 EndPlot
 BeginPlot
@@ -30123,7 +30123,7 @@ BeginPlot
 		CityName=Tisfun
 		CityPopulation=4
 		BuildingType=BUILDING_GRANARY
-		Player46Culture=10, (Independent2)
+		Player47Culture=10, (Independent2)
 	EndCity
 EndPlot
 BeginPlot
@@ -31980,7 +31980,7 @@ BeginPlot
 		BuildingType=BUILDING_ZOROASTRIAN_SHRINE
 		ReligionType=RELIGION_ZOROASTRIANISM
 		HolyCityReligionType=RELIGION_ZOROASTRIANISM
-		Player46Culture=10, (Independent2)
+		Player47Culture=10, (Independent2)
 	EndCity
 EndPlot
 BeginPlot
@@ -32762,7 +32762,7 @@ BeginPlot
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_PHARMACY
-		Player46Culture=10, (Independent)
+		Player47Culture=10, (Independent)
 	EndCity
 EndPlot
 BeginPlot
@@ -33923,7 +33923,7 @@ BeginPlot
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_BUDDHIST_TEMPLE
 		ReligionType=RELIGION_BUDDHISM
-		Player45Culture=50, (Independent)
+		Player46Culture=50, (Independent)
 	EndCity
 EndPlot
 BeginPlot
@@ -34298,7 +34298,7 @@ BeginPlot
 		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_HINDU_TEMPLE
 		ReligionType=RELIGION_HINDUISM
-		Player45Culture=50, (Independent)
+		Player46Culture=50, (Independent)
 	EndCity
 EndPlot
 BeginPlot
@@ -35109,7 +35109,7 @@ BeginPlot
 		BuildingType=BUILDING_SMOKEHOUSE
 		BuildingType=BUILDING_HINDU_TEMPLE
 		ReligionType=RELIGION_HINDUISM
-		Player46Culture=10, (Independent2)
+		Player47Culture=10, (Independent2)
 	EndCity
 EndPlot
 BeginPlot
@@ -35171,7 +35171,7 @@ BeginPlot
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_HINDU_TEMPLE
 		ReligionType=RELIGION_HINDUISM
-		Player45Culture=50, (Independent)
+		Player46Culture=50, (Independent)
 	EndCity
 EndPlot
 BeginPlot
@@ -35212,7 +35212,7 @@ BeginPlot
 		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_HINDU_MONASTERY
 		ReligionType=RELIGION_HINDUISM
-		Player45Culture=100, (Independent)
+		Player46Culture=100, (Independent)
 	EndCity
 EndPlot
 BeginPlot
@@ -35554,7 +35554,7 @@ BeginPlot
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_HINDU_TEMPLE
 		ReligionType=RELIGION_HINDUISM
-		Player45Culture=10, (Independent)
+		Player46Culture=10, (Independent)
 	EndCity
 EndPlot
 BeginPlot
@@ -35611,7 +35611,7 @@ BeginPlot
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_HINDU_TEMPLE
 		ReligionType=RELIGION_HINDUISM
-		Player46Culture=50, (Independent2)
+		Player47Culture=50, (Independent2)
 	EndCity
 EndPlot
 BeginPlot
@@ -36019,7 +36019,7 @@ BeginPlot
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_HINDU_TEMPLE
 		ReligionType=RELIGION_HINDUISM
-		Player45Culture=50, (Independent)
+		Player46Culture=50, (Independent)
 	EndCity
 EndPlot
 BeginPlot
@@ -36869,7 +36869,7 @@ BeginPlot
 		HolyCityReligionType=RELIGION_HINDUISM
 		ReligionType=RELIGION_BUDDHISM
 		HolyCityReligionType=RELIGION_BUDDHISM
-		Player46Culture=50, (Independent2)
+		Player47Culture=50, (Independent2)
 	EndCity
 EndPlot
 BeginPlot
@@ -37234,7 +37234,7 @@ BeginPlot
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_HINDU_TEMPLE
 		ReligionType=RELIGION_HINDUISM
-		Player46Culture=50, (Independent2)
+		Player47Culture=50, (Independent2)
 	EndCity
 EndPlot
 BeginPlot
@@ -38363,7 +38363,7 @@ BeginPlot
 		BuildingType=BUILDING_BUDDHIST_TEMPLE
 		BuildingType=BUILDING_SHWEDAGON_PAYA
 		ReligionType=RELIGION_BUDDHISM
-		Player45Culture=10, (Independent)
+		Player46Culture=10, (Independent)
 	EndCity
 EndPlot
 BeginPlot
@@ -39265,7 +39265,7 @@ BeginPlot
 (		BuildingType=BUILDING_CONFUCIAN_TEMPLE)
 (		ReligionType=RELIGION_CONFUCIANISM)
 (		ReligionType=RELIGION_TAOISM)
-		Player46Culture=3000, (100)
+		Player47Culture=3000, (100)
 	EndCity
 EndPlot
 BeginPlot
@@ -40038,7 +40038,7 @@ BeginPlot
 		cityowner=47
 		CityName=Guiyang
 		CityPopulation=1
-		Player46Culture=250
+		Player47Culture=250
 	EndCity
 	PlotType=1
 EndPlot
@@ -40109,7 +40109,7 @@ BeginPlot
 		ReligionType=RELIGION_CONFUCIANISM
 		ReligionType=RELIGION_TAOISM
 		HolyCityReligionType=RELIGION_TAOISM
-		Player46Culture=100, (20)
+		Player47Culture=100, (20)
 	EndCity
 EndPlot
 BeginPlot
@@ -40497,7 +40497,7 @@ BeginPlot
 		ReligionType=RELIGION_BUDDHISM
 		ReligionType=RELIGION_CONFUCIANISM
 		ReligionType=RELIGION_TAOISM
-		Player46Culture=100, (20)
+		Player47Culture=100, (20)
 	EndCity
 EndPlot
 BeginPlot
@@ -41261,7 +41261,7 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_BUDDHIST_TEMPLE
 		ReligionType=RELIGION_BUDDHISM
-		Player46Culture=100, (0)
+		Player47Culture=100, (0)
 	EndCity
 EndPlot
 BeginPlot
@@ -41314,7 +41314,7 @@ BeginPlot
 		ReligionType=RELIGION_CONFUCIANISM
 		HolyCityReligionType=RELIGION_CONFUCIANISM
 		ReligionType=RELIGION_TAOISM
-		Player46Culture=100, (20)
+		Player47Culture=100, (20)
 	EndCity
 EndPlot
 BeginPlot
@@ -42095,7 +42095,7 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		ReligionType=RELIGION_BUDDHISM
 		ReligionType=RELIGION_CONFUCIANISM
-		Player46Culture=100, (0)
+		Player47Culture=100, (0)
 	EndCity
 EndPlot
 BeginPlot
