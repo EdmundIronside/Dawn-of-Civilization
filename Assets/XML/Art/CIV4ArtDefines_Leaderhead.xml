@@ -255,6 +255,14 @@
 			<BackgroundKFM>art/LeaderHeads/Shaka/shaka_BG.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_SHAKA</Type>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Warlords_Atlas_2.dds,3,7</Button>
+			<NIF>art/LeaderHeads/Shaka/shaka.nif</NIF>
+			<KFM>art/LeaderHeads/Shaka/shaka.kfm</KFM>
+			<NoShaderNIF>art/LeaderHeads/Shaka/shaka_noshader.nif</NoShaderNIF>
+			<BackgroundKFM>art/LeaderHeads/Shaka/shaka_BG.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_BRENNUS</Type>
 			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Warlords_Atlas_2.dds,5,7</Button>
 			<NIF>art/LeaderHeads/Brennus/brennus.nif</NIF>
