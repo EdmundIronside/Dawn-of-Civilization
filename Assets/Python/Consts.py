@@ -8,24 +8,24 @@ iWorldX = 124
 iWorldY = 68
 
 # initialise player variables to player IDs from WBS
-iNumPlayers = 45
+iNumPlayers = 46
 (iEgypt, iChina, iBabylonia, iHarappa, iGreece, iIndia, iCarthage, iPolynesia, iPersia, iRome, 
 iTamils, iEthiopia, iKorea, iMaya, iByzantium, iJapan, iVikings, iTurks, iArabia, iTibet, 
 iIndonesia, iMoors, iSpain, iFrance, iKhmer, iEngland, iHolyRome, iRussia, iMali, iPoland, 
 iPortugal, iInca, iItaly, iMongolia, iAztecs, iMughals, iOttomans, iThailand, iCongo, iNetherlands, 
-iGermany, iAmerica, iArgentina, iBrazil, iCanada) = range(iNumPlayers)
+iGermany, iAmerica, iArgentina, iZulu, iBrazil, iCanada) = range(iNumPlayers)
 
 (pEgypt, pChina, pBabylonia, pHarappa, pGreece, pIndia, pCarthage, pPolynesia, pPersia, pRome, 
 pTamils, pEthiopia, pKorea, pMaya, pByzantium, pJapan, pVikings, pTurks, pArabia, pTibet, 
 pIndonesia, pMoors, pSpain, pFrance, pKhmer, pEngland, pHolyRome, pRussia, pMali, pPoland, 
 pPortugal, pInca, pItaly, pMongolia, pAztecs, pMughals, pOttomans, pThailand, pCongo, pNetherlands, 
-pGermany, pAmerica, pArgentina, pBrazil, pCanada) = [gc.getPlayer(i) for i in range(iNumPlayers)]
+pGermany, pAmerica, pArgentina, pZulu, pBrazil, pCanada) = [gc.getPlayer(i) for i in range(iNumPlayers)]
 
 (teamEgypt, teamChina, teamBabylonia, teamHarappa, teamGreece, teamIndia, teamCarthage, teamPolynesia, teamPersia, teamRome, 
 teamTamils, teamEthiopia, teamKorea, teamMaya, teamByzantium, teamJapan, teamVikings, teamTurks, teamArabia, teamTibet, 
 teamIndonesia, teamMoors, teamSpain, teamFrance, teamKhmer, teamEngland, teamHolyRome, teamRussia, teamMali, teamPoland, 
 teamPortugal, teamInca, teamItaly, teamMongolia, teamAztecs, teamMughals, teamOttomans, teamThailand, teamCongo, teamNetherlands, 
-teamGermany, teamAmerica, teamArgentina, teamBrazil, teamCanada) = [gc.getTeam(i) for i in range(iNumPlayers)]
+teamGermany, teamAmerica, teamArgentina, teamZulu, teamBrazil, teamCanada) = [gc.getTeam(i) for i in range(iNumPlayers)]
 
 iHolland = iNetherlands
 iDelhi = iMughals
@@ -73,24 +73,24 @@ lCivGroups = [[iGreece, iRome, iByzantium, iVikings, iMoors, iSpain, iFrance, iE
 		[iIndia, iChina, iHarappa, iPolynesia, iPersia, iJapan, iTamils, iKorea, iByzantium, iTibet, iKhmer, iIndonesia, iRussia, iMongolia, iMughals, iThailand, iTurks], #Asian
 		[iEgypt, iBabylonia, iPersia, iByzantium, iArabia, iOttomans, iCarthage, iTurks], #MiddleEastern
 		[iEgypt, iGreece, iCarthage, iRome, iByzantium, iMoors], #Mediterranean
-		[iEgypt, iCarthage, iEthiopia, iMali, iCongo], #African
+		[iEgypt, iCarthage, iEthiopia, iMali, iCongo, iZulu], #African
 		[iMaya, iInca, iAztecs, iAmerica, iArgentina, iBrazil, iCanada]] #American
 
 lCivStabilityGroups = [[iVikings, iSpain, iFrance, iEngland, iHolyRome, iRussia, iNetherlands, iPoland, iPortugal, iItaly, iGermany],  #Euros
 		[iIndia, iChina, iHarappa, iPolynesia, iJapan, iKorea, iTibet, iKhmer, iIndonesia, iMongolia, iThailand, iTamils], #Asian
 		[iBabylonia, iPersia, iArabia, iOttomans, iMughals, iTurks], #MiddleEastern
-		[iEgypt, iGreece, iCarthage, iRome, iEthiopia, iByzantium, iMoors, iMali, iCongo], #Mediterranean
+		[iEgypt, iGreece, iCarthage, iRome, iEthiopia, iByzantium, iMoors, iMali, iCongo, iZulu], #Mediterranean
 		[iMaya, iInca, iAztecs, iAmerica, iArgentina, iBrazil, iCanada]] #American
 		
 lTechGroups = [[iRome, iGreece, iByzantium, iVikings, iSpain, iFrance, iEngland, iHolyRome, iRussia, iNetherlands, iPoland, iPortugal, iItaly, iGermany, iAmerica, iArgentina, iBrazil, iCanada], #Europe and NA
-	       [iEgypt, iBabylonia, iHarappa, iIndia, iCarthage, iPersia, iEthiopia, iArabia, iMoors, iMali, iOttomans, iMughals, iTamils, iCongo, iTurks], #Middle East
+	       [iEgypt, iBabylonia, iHarappa, iIndia, iCarthage, iPersia, iEthiopia, iArabia, iMoors, iMali, iOttomans, iMughals, iTamils, iCongo, iTurks, iZulu], #Middle East
 	       [iChina, iKorea, iJapan, iTibet, iKhmer, iIndonesia, iMongolia, iThailand], #Far East
 	       [iPolynesia, iMaya, iInca, iAztecs]] #Native America
 
 
 lCivBioOldWorld = [iEgypt, iIndia, iChina, iBabylonia, iHarappa, iGreece, iPolynesia, iPersia, iCarthage, iRome, iJapan, iTamils, 
 		   iEthiopia, iKorea, iByzantium, iVikings, iTurks, iArabia, iTibet, iKhmer, iIndonesia, iMoors, iSpain, iFrance, iEngland, iHolyRome, 
-		   iRussia, iNetherlands, iMali, iOttomans, iPoland, iPortugal, iItaly, iMongolia, iAmerica, iMughals, iThailand, iCongo, 
+		   iRussia, iNetherlands, iMali, iOttomans, iPoland, iPortugal, iItaly, iMongolia, iAmerica, iMughals, iThailand, iCongo, iZulu, 
 		   iGermany, iIndependent, iIndependent2, iCeltia, iBarbarian]
 lCivBioNewWorld = [iMaya, iInca, iAztecs] #, iNative]
 
@@ -185,11 +185,12 @@ lNeighbours = [
 [iHarappa, iIndia, iPersia, iTamils, iTibet, iTurks], #Mughals
 [iBabylonia, iGreece, iPersia, iByzantium, iRussia, iMongolia, iCarthage, iTurks], #Ottomans
 [iIndia, iChina, iJapan, iIndonesia, iKhmer, iTamils], #Thailand
-[iEthiopia, iMali], #Congo
+[iEthiopia, iMali, iZulu], #Congo
 [iVikings, iFrance, iEngland, iHolyRome, iGermany], #Netherlands
 [iRome, iVikings, iFrance, iEngland, iHolyRome, iRussia, iPoland, iNetherlands], #Germany
 [iJapan, iSpain, iFrance, iEngland, iRussia, iInca, iAztecs], #America
 [iSpain, iPortugal, iInca, iBrazil], #Argentina
+[iCongo], #Zulu
 [iSpain, iPortugal, iInca, iArgentina], #Brazil
 [iAmerica], #Canada
 ]
@@ -239,6 +240,7 @@ lOlderNeighbours = [
 [iHolyRome, iPoland], #Germany
 [iSpain, iFrance, iEngland, iNetherlands, iPortugal, iAztecs, iMaya], #America
 [iSpain, iPortugal, iInca], #Argentina
+[], #Zulu
 [iSpain, iPortugal, iInca], #Brazil
 [iAmerica], #Canada
 ]
@@ -290,6 +292,7 @@ tBirth = (
 1700,					# Germany
 1775, # 346, #1775AD #332 for 1733AD	# America
 1810,					# Argentina
+1816,					# Zulu
 1822,					# Brazil
 1867,	#Canada
 #1791,	#Canada
@@ -346,6 +349,7 @@ tFall = (
 2020,					# Germany
 2020,					# America
 2020,					# Argentina
+1900,					# Zulu
 2020,					# Brazil
 2020)					# Canada
 
@@ -395,6 +399,7 @@ iCivGermany : (1900, 1940, -1),
 iCivAmerica : (1900, 1950, 2000),
 iCivMexico : (1880, 1940, 1960),
 iCivArgentina : (1930, 1960, 2000),
+iCivZulu : (1850, 1875, 1900),
 iCivColombia : (1870, 1920, 1950),
 iCivBrazil : (1880, -1, 1950),
 iCivCanada : (1920, 1950, 2000),
@@ -457,6 +462,7 @@ tResurrectionIntervals = (
 [(1840, 2020)], #Germany
 [(1770, 2020)], #America
 [(1810, 2020)], #Argentina
+[(1968, 2020)], #Zulu
 [(1820, 2020)], #Brazil
 [(1867, 2020)], #Canada
 )
@@ -507,6 +513,7 @@ lEnemyCivsOnSpawn = [
 [iHolyRome, iPoland], #Germany
 [iIndependent,iIndependent2], #America
 [iSpain, iSpain, iIndependent,iIndependent2], #Argentina
+[], #Zulu
 [iIndependent,iIndependent2], #Brazil
 [], #Canada
 ]
@@ -556,6 +563,7 @@ lTotalWarOnSpawn = [
 [], #Germany
 [], #America
 [], #Argentina
+[], #Zulu
 [], #Brazil
 [], #Canada
 ]
@@ -606,6 +614,7 @@ tAggressionLevel = (
 2, #Germany
 2, #America
 0, #Argentina
+2, #Zulu
 0, #Brazil
 0, #Canada
 0) #Barbs
@@ -656,6 +665,7 @@ tAIStopBirthThreshold = (
     80, #Germany
     50, #America
     60, #Argentina
+	70, #Zulu
     60, #Brazil
     60, #Canada
     100,
@@ -710,6 +720,7 @@ tResurrectionProb = (
 100, #Germany
 100, #America
 100, #Argentina
+50, #Zulu
 100, #Brazil
 100, #Canada
 #    100, #Holland
@@ -762,6 +773,7 @@ tPatienceThreshold = (
 20, #Germany
 30, #America
 40, #Argentina
+40, #Zulu
 40, #Brazil
 40, #Canada
 100) #Barbs
@@ -1027,7 +1039,7 @@ iVictorySecularism = 11
 
 #leaders
 
-iNumLeaders = 124
+iNumLeaders = 125
 (iLeaderBarbarian, iNativeLeader, iIndependentLeader, iAlexanderTheGreat, iAsoka, iAugustus, iBismarck, iBoudica, iBrennus, iCatherine, 
 iCharlemagne, iChurchill, iCyrus, iDarius, iDeGaulle, iElizabeth, iFrederick, iGandhi, iGenghisKhan, iSargon, 
 iHammurabi, iHannibal, iCleopatra, iHuaynaCapac, iIsabella, iJoao, iJuliusCaesar, iJustinian, iKublaiKhan, iLincoln, 
@@ -1040,7 +1052,7 @@ iShahuji, iNaresuan, iAlpArslan, iBaibars, iNasser, iAlfred, iTrudeau, iChandrag
 iRahman, iRajendra, iLobsangGyatso, iSobieski, iVatavelli, iMbemba, iHarun, iSongtsen, iCasimir, iYaqub, 
 iLorenzo, iSantaAnna, iJuarez, iCardenas, iPedro, iSanMartin, iPeron, iBolivar, iAhoeitu, iKrishnaDevaRaya, 
 iMussolini, iSejong, iBhutto, iPilsudski, iWalesa, iGerhardsen, iVargas, iMacDonald, iCastilla, iWilliam,
-iGeorge, iKhosrow, iBumin, iTamerlane) = range(iNumLeaders)
+iGeorge, iKhosrow, iBumin, iTamerlane, iShaka) = range(iNumLeaders)
 
 resurrectionLeaders = {
 	iChina : iHongwu,

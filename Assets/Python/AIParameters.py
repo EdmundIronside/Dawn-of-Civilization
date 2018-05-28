@@ -162,6 +162,7 @@ iCivPortugal : 5,
 iCivItaly : 70,
 iCivNetherlands : 5,
 iCivAmerica : 20,
+iCivZulu : 100,
 }
 
 dCompactnessModifierExploration = {

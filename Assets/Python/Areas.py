@@ -143,6 +143,7 @@ tCapitals = (
 (62, 53), # Berlin
 (27, 46), # Washington
 (34, 11), # Buenos Aires
+(68, 11), # Ulundi
 (41, 18), # Rio de Janeiro
 (30, 52), # Montreal
 )
@@ -233,6 +234,7 @@ tBirthArea = (
 ((58, 49), 	(65, 55)), 	# Germany
 ((25, 43), 	(32, 50)), 	# America
 ((31, 3), 	(35, 13)), 	# Argentina
+((68, 11),	(57, 68)),	# Zulu
 ((36, 15), 	(43, 27)), 	# Brazil
 ((20, 50), 	(35, 60)), 	# Canada
 )
@@ -321,6 +323,7 @@ tCoreArea = (
 ((58, 49),	(65, 55)),	# Germany
 ((23, 45),	(32, 50)),	# America
 ((31, 6),	(35, 12)),	# Argentina
+((68, 11),	(67, 10)),	# Zulu
 ((37, 15),	(41, 22)),	# Brazil
 ((27, 50),	(35, 52)),	# Canada
 )
@@ -431,6 +434,7 @@ tNormalArea = (
 ((59, 48), 	(66, 55)), 	# Germany
 ((11, 43), 	(31, 49)), 	# America
 ((31,  3), 	(36, 15)), 	# Argentina
+((68, 11),	(66, 10)),	# Zulu
 ((32, 14), 	(43, 28)), 	# Brazil
 (( 8, 50), 	(37, 67)), 	# Canada
 )
@@ -517,6 +521,7 @@ tBroaderArea = (
 ((55, 46), 	(67, 57)), 	# Germany
 ((10, 42), 	(37, 56)), 	# America
 ((29,  3), 	(36, 15)), 	# Argentina
+((60, 8),	(72, 17)),	# Zulu
 ((32, 14), 	(43, 28)), 	# Brazil
 (( 8, 50), 	(37, 67)), 	# Canada
 )
