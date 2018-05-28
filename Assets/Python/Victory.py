@@ -170,6 +170,10 @@ tNWIndiaExceptions = ((89, 36), (90, 36), (91, 36), (89, 37), (90, 37), (91, 37)
 tNCAmericaTL = (3, 33)
 tNCAmericaBR = (37, 63)
 
+# third Zulu goal: control South Africa in 1900 AD
+tSouthAfricaTL = (61, 10)
+tSouthAfricaBR = (72, 21)
+
 # first Colombian goal: allow no European civilizations in Peru, Gran Colombia, Guayanas and the Caribbean in 1870 AD
 tPeruTL = (25, 16)
 tPeruBR = (32, 24)
@@ -1401,6 +1405,30 @@ def checkTurn(iGameTurn, iPlayer):
 		if pArgentina.isGoldenAge() and not pArgentina.isAnarchy():
 			data.iArgentineGoldenAgeTurns += 1
 			
+	elif iPlayer == iZulu:
+	
+		# first goal: have 2 Ikhanda in 1850 AD
+		if iGameTurn == getTurnForYear(1850):
+			expire(iZulu, 0)
+			
+		# second goal: have 10 Impi in 1875 AD
+		if iGameTurn == getTurnForYear(1875):
+			iZuluImpi = 0
+			iZuluImpi += pZulu.getUnitClassCount(gc.getUnitInfo(iImpi).getUnitClassType())
+			
+			if iZuluImpi >= 10:
+				win(iZulu, 1)
+		
+		if iGameTurn == getTurnForYear(1875):
+			expire(iZulu, 1)
+			
+		# Control all South Africa in 1900 AD
+		if iGameTurn == getTurnForYear(1900):
+			if isControlled(iZulu, utils.getPlotList(tSouthAfricaTL, tSouthAfricaBR)):
+				win(iZulu, 2)
+			else:
+				lose(iZulu, 2)
+					
 	elif iPlayer == iBrazil:
 	
 		# first goal: control 10 slave plantations and 4 pastures in 1880 AD
@@ -4015,6 +4043,18 @@ def getUHVHelp(iPlayer, iGoal):
 		elif iGoal == 2:
 			iGoldenAgeTurns = data.iArgentineGoldenAgeTurns
 			aHelp.append(getIcon(iGoldenAgeTurns >= utils.getTurns(40)) + localText.getText("TXT_KEY_VICTORY_GOLDEN_AGES", (iGoldenAgeTurns / utils.getTurns(8), 5)))
+	
+	elif iPlayer == iZulu:
+		if iGoal == 0:
+			iNumIkhanda = getNumBuildings(iZulu, iIkhanda)
+			aHelp.append(getIcon(iNumIkhanda >= 2) + localText.getText("TXT_KEY_VICTORY_NUM_IKHANDA", (iNumIkhanda, 2)))
+		elif iGoal == 1:
+			iZuluImpi = 0
+			iZuluImpi += pZulu.getUnitClassCount(gc.getUnitInfo(iImpi).getUnitClassType())
+			aHelp.append(getIcon(iZuluImpi >= 10) + localText.getText("TXT_KEY_VICTORY_IMPI_SIZE", (iZuluImpi, 10)))
+		elif iGoal == 2:
+			bSouthAfrica = isControlled(iZulu, utils.getPlotList(tSouthAfricaTL, tSouthAfricaBR))
+			aHelp.append(getIcon(bSAfrica) + localText.getText("TXT_KEY_VICTORY_CONTROL_SOUTH_AFRICA", ()))
 
 	elif iPlayer == iBrazil:
 		if iGoal == 0:
