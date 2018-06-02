@@ -307,7 +307,6 @@
 					<iFlavor>4</iFlavor>
 				</Flavor>
 			</Flavors>
-			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_STABLE</BuildingClass>
