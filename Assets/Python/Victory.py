@@ -171,8 +171,8 @@ tNCAmericaTL = (3, 33)
 tNCAmericaBR = (37, 63)
 
 # third Zulu goal: control South Africa in 1900 AD
-tSouthAfricaTL = (61, 10)
-tSouthAfricaBR = (72, 21)
+tBoerAfricaTL = (61, 10)
+tBoerAfricaBR = (72, 21)
 
 # first Colombian goal: allow no European civilizations in Peru, Gran Colombia, Guayanas and the Caribbean in 1870 AD
 tPeruTL = (25, 16)
@@ -1424,10 +1424,10 @@ def checkTurn(iGameTurn, iPlayer):
 			
 		# Control all South Africa in 1900 AD
 		if iGameTurn == getTurnForYear(1900):
-				if isControlled(iZulu, utils.getPlotList(tSouthAfricaTL, tSouthAfricaBR)):
-					win(iZulu, 2)
-				else:
-					lose(iZulu, 2)
+			if isControlled(iZulu, utils.getPlotList(tBoerAfricaTL, tBoerAfricaBR)):
+				win(iZulu, 2)
+			else:
+				lose(iZulu, 2)
 					
 	elif iPlayer == iBrazil:
 	
@@ -4048,13 +4048,13 @@ def getUHVHelp(iPlayer, iGoal):
 		if iGoal == 0:
 			iNumIkhanda = getNumBuildings(iZulu, iIkhanda)
 			aHelp.append(getIcon(iNumIkhanda >= 2) + localText.getText("TXT_KEY_VICTORY_NUM_IKHANDA", (iNumIkhanda, 2)))
-	elif iGoal == 1:
+		elif iGoal == 1:
 			iZuluImpi = 0
 			iZuluImpi += pZulu.getUnitClassCount(gc.getUnitInfo(iImpi).getUnitClassType())
 			aHelp.append(getIcon(iZuluImpi >= 10) + localText.getText("TXT_KEY_VICTORY_IMPI_SIZE", (iZuluImpi, 10)))
-	elif iGoal == 2:
-			bSAfrica = isControlled(iZulu, utils.getPlotList(tSAfricaTL, tSAfricaBR))
-			aHelp.append(getIcon(bSAfrica) + localText.getText("TXT_KEY_VICTORY_CONTROL_SOUTH_AFRICA", ()))
+		elif iGoal == 2:
+			bSouthAfrica = isControlled(utils.getPlotList(tBoerAfricaTL, tBoerAfricaBR))
+			aHelp.append(getIcon(bAfrica) + localText.getText("TXT_KEY_VICTORY_CONTROL_SOUTH_AFRICA", ()))
 
 	elif iPlayer == iBrazil:
 		if iGoal == 0:
