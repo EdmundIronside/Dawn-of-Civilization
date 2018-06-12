@@ -84,6 +84,10 @@ tMaghrebBR = (58, 39)
 tWestAfricaTL = (48, 26)
 tWestAfricaBR = (56, 32)
 
+# Third Zulu goal: Control 55% of South Africa by 1910
+tBoerAfricaTL = (61, 10)
+tBoerAfricaBR = (72, 21)
+
 # third Spanish goal: spread Catholicism to 40% and allow no Protestant civilization in Europe in 1700 AD
 # second French goal: control 40% of Europe and North America in 1800 AD
 tEuropeTL = (44, 40)
@@ -169,10 +173,6 @@ tNWIndiaExceptions = ((89, 36), (90, 36), (91, 36), (89, 37), (90, 37), (91, 37)
 # first American goal: allow no European colonies in North America, Central America and the Caribbean
 tNCAmericaTL = (3, 33)
 tNCAmericaBR = (37, 63)
-
-# third Zulu goal: control South Africa in 1900 AD
-tBoerAfricaTL = (61, 10)
-tBoerAfricaBR = (72, 21)
 
 # first Colombian goal: allow no European civilizations in Peru, Gran Colombia, Guayanas and the Caribbean in 1870 AD
 tPeruTL = (25, 16)
@@ -1406,25 +1406,27 @@ def checkTurn(iGameTurn, iPlayer):
 			data.iArgentineGoldenAgeTurns += 1
 			
 	elif iPlayer == iZulu:
-	
-		# first goal: have 2 Ikhanda in 1850 AD
-		if iGameTurn == getTurnForYear(1850):
+		# first goal: have 2 Ikhanda in 1860 AD
+		if iGameTurn == getTurnForYear(1860):
 			expire(iZulu, 0)
 			
-		# second goal: have 10 Impi in 1875 AD
-		if iGameTurn == getTurnForYear(1875):
+		# second goal: have 15 Impi in 1885 AD
+		if iGameTurn == getTurnForYear(1885):
 			iZuluImpi = 0
 			iZuluImpi += pZulu.getUnitClassCount(gc.getUnitInfo(iImpi).getUnitClassType())
 			
-			if iZuluImpi >= 10:
+			if iZuluImpi >= 15:
 				win(iZulu, 1)
 		
-		if iGameTurn == getTurnForYear(1875):
+		if iGameTurn == getTurnForYear(1885):
 			expire(iZulu, 1)
 			
-		# Control all South Africa in 1900 AD
-		if iGameTurn == getTurnForYear(1900):
-			if isControlled(iZulu, utils.getPlotList(tBoerAfricaTL, tBoerAfricaBR)):
+		# third goal: Control 55% of South Africa by 1910 AD
+		if iGameTurn == getTurnForYear(1910):
+			iControl, iTotal = countControlledTiles(iZulu, tBoerAfricaTL, tBoerAfricaBR)
+			fControl = iControl * 100.0 / iTotal
+			
+			if fControl >= 55.0:
 				win(iZulu, 2)
 			else:
 				lose(iZulu, 2)
@@ -4051,10 +4053,11 @@ def getUHVHelp(iPlayer, iGoal):
 		elif iGoal == 1:
 			iZuluImpi = 0
 			iZuluImpi += pZulu.getUnitClassCount(gc.getUnitInfo(iImpi).getUnitClassType())
-			aHelp.append(getIcon(iZuluImpi >= 10) + localText.getText("TXT_KEY_VICTORY_IMPI_SIZE", (iZuluImpi, 10)))
+			aHelp.append(getIcon(iZuluImpi >= 15) + localText.getText("TXT_KEY_VICTORY_IMPI_SIZE", (iZuluImpi, 10)))
 		elif iGoal == 2:
-			bSouthAfrica = isControlled(utils.getPlotList(tBoerAfricaTL, tBoerAfricaBR))
-			aHelp.append(getIcon(bAfrica) + localText.getText("TXT_KEY_VICTORY_CONTROL_SOUTH_AFRICA", ()))
+			iControl, iTotal = countControlledTiles(iZulu, tBoerAfricaTL, tBoerAfricaBR)
+			fControl = iControl * 100.0 / iTotal
+			aHelp.append(getIcon(fControl >= 55.0) + localText.getText("TXT_KEY_VICTORY_SOUTHAFRICA", (str(u"%.2f%%" % fControl), str(55))))
 
 	elif iPlayer == iBrazil:
 		if iGoal == 0:

@@ -98,7 +98,19 @@ tMongolsPersiaBR = (85, 49)
 
 tConquestMongolsPersia = (12, iMongolia, iTurks, tMongolsPersiaTL, tMongolsPersiaBR, 7, iMongolsPersiaYear, 10)
 
-lConquests = [tConquestRomeCarthage, tConquestRomeGreece, tConquestRomeAnatolia, tConquestRomeCelts, tConquestRomeEgypt, tConquestGreeceMesopotamia, tConquestGreeceEgypt, tConquestGreecePersia, tConquestCholaSumatra, tConquestSpainMoors, tConquestTurksPersia, tConquestTurksAnatolia, tConquestMongolsPersia]
+iEnglandZuluYear = 1878
+tEnglandZuluTL = (69, 13)
+tEnglandZuluBR = (69, 15)
+
+tConquestEnglandZulu = (13, iEngland, iZulu, tEnglandZuluTL, tEnglandZuluBR, 1, iEnglandZuluYear, 10)
+
+iEnglandNetherlandsYear = 1899
+tEnglandNetherlandsTL = (63, 10)
+tEnglandNetherlandsBR = (67, 10)
+
+tConquestEnglandNetherlands = (14, iEngland, iNetherlands, tEnglandNetherlandsTL, tEnglandNetherlandsBR, 1, iEnglandNetherlandsYear, 10)
+
+lConquests = [tConquestRomeCarthage, tConquestRomeGreece, tConquestRomeAnatolia, tConquestRomeCelts, tConquestRomeEgypt, tConquestGreeceMesopotamia, tConquestGreeceEgypt, tConquestGreecePersia, tConquestCholaSumatra, tConquestSpainMoors, tConquestTurksPersia, tConquestTurksAnatolia, tConquestMongolsPersia, tConquestEnglandZulu, tConquestEnglandNetherlands]
 
 class AIWars:
 		

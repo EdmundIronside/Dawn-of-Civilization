@@ -559,6 +559,7 @@ dStartingLeaders = [
 	iGermany : iFrederick,
 	iAmerica : iWashington,
 	iArgentina : iSanMartin,
+	iZulu : iShaka,
 	iBrazil : iPedro,
 	iCanada : iMacDonald,
 },
@@ -2161,6 +2162,9 @@ def leader(iPlayer):
 		
 	elif iPlayer == iTibet:
 		if iGameTurn >= getTurnForYear(1500): return iLobsangGyatso
+		
+	elif iPlayer == iZulu:
+		if iGameTurn >= getTurnForYear(1915): return iMandela
 		
 	elif iPlayer == iIndonesia:
 		if iEra >= iGlobal: return iSuharto

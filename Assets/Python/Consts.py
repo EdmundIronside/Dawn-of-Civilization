@@ -143,7 +143,7 @@ iLime = 100
 iNumMinorCities = 38
 
 # scripted conquerors
-iNumConquests = 13
+iNumConquests = 15
 
 #neighbours
 lNeighbours = [
@@ -292,7 +292,7 @@ tBirth = (
 1700,					# Germany
 1775, # 346, #1775AD #332 for 1733AD	# America
 1810,					# Argentina
-1816,					# Zulu
+1810,					# Zulu
 1822,					# Brazil
 1867,	#Canada
 #1791,	#Canada
@@ -349,7 +349,7 @@ tFall = (
 2020,					# Germany
 2020,					# America
 2020,					# Argentina
-1900,					# Zulu
+1920,					# Zulu
 2020,					# Brazil
 2020)					# Canada
 
@@ -399,7 +399,7 @@ iCivGermany : (1900, 1940, -1),
 iCivAmerica : (1900, 1950, 2000),
 iCivMexico : (1880, 1940, 1960),
 iCivArgentina : (1930, 1960, 2000),
-iCivZulu : (1850, 1875, 1900),
+iCivZulu : (1850, 1880, 1910),
 iCivColombia : (1870, 1920, 1950),
 iCivBrazil : (1880, -1, 1950),
 iCivCanada : (1920, 1950, 2000),
@@ -1039,12 +1039,12 @@ iVictorySecularism = 11
 
 #leaders
 
-iNumLeaders = 125
+iNumLeaders = 126
 (iLeaderBarbarian, iNativeLeader, iIndependentLeader, iAlexanderTheGreat, iAsoka, iAugustus, iBismarck, iBoudica, iBrennus, iCatherine, 
 iCharlemagne, iChurchill, iCyrus, iDarius, iDeGaulle, iElizabeth, iFrederick, iGandhi, iGenghisKhan, iSargon, 
 iHammurabi, iHannibal, iCleopatra, iHuaynaCapac, iIsabella, iJoao, iJuliusCaesar, iJustinian, iKublaiKhan, iLincoln, 
 iLouis, iMansaMusa, iMao, iMehmed, iMontezuma, iNapoleon, iPacal, iPericles, iPeter, iQinShiHuang, 
-iRamesses, iRagnar, iRoosevelt, iSaladin, iShaka, iSittingBull, iStalin, iSuleiman, iSuryavarman, iOdaNobunaga, iVictoria, 
+iRamesses, iRagnar, iRoosevelt, iSaladin, iShaka, iMandela, iSittingBull, iStalin, iSuleiman, iSuryavarman, iOdaNobunaga, iVictoria, 
 iWangKon, iWashington, iWillemVanOranje, iZaraYaqob, iKammu, iMeiji, iAkbar, iHiram, iHaileSelassie, iGustav, 
 iMongkut, iPhilip, iBarbarossa, iCharles, iFrancis, iIvan, iAfonso, iAtaturk, iMaria, iHitler,
 iFranco, iAlexanderII, iCavour, iAbbas, iKhomeini, iTaizong, iHongwu, iDharmasetu, iHayamWuruk, iSuharto, 

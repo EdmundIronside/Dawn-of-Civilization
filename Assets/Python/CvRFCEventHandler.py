@@ -393,6 +393,9 @@ class CvRFCEventHandler:
 		if iWinningPlayer == iAztecs and not pAztecs.isReborn():
 			utils.captureUnit(pLosingUnit, pWinningUnit, iAztecSlave, 35)
 			
+		elif iWinningPlayer == iZulu and not pZulu.isReborn():
+			utils.captureUnit(pLosingUnit, pWinningUnit, iRifleman, 40)
+			
 		elif iLosingPlayer == iNative:
 			if iWinningPlayer not in lCivBioNewWorld or True in data.lFirstContactConquerors:
 				if gc.getPlayer(iWinningPlayer).isSlavery() or gc.getPlayer(iWinningPlayer).isColonialSlavery():
