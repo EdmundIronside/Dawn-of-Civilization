@@ -1948,7 +1948,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ZUL1</Tag>
-		<English>Have 2 Ikhanda in 1850 AD</English>
+		<English>Have 2 Ikhanda in 1860 AD</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ZUL2_TITLE</Tag>
@@ -1956,7 +1956,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ZUL2</Tag>
-		<English>Have 10 Impi in 1875 AD</English>
+		<English>Have 15 Impi in 1885 AD</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ZUL3_TITLE</Tag>
@@ -1964,7 +1964,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ZUL3</Tag>
-		<English>Control all South Africa in 1900 AD</English>
+		<English>Control 55% of South Africa in 1910 AD </English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_URV_JUD1</Tag>
@@ -2574,11 +2574,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_CONTROL_SOUTH_AFRICA</Tag>
-		<English>South Africa territory: %s1 / %s2%%</English>
+		<English>South Africa: %s1 / %s2%%</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_IMPI_SIZE</Tag>
 		<English>Impi army built: %d1 / %d2</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_SOUTHAFRICA</Tag>
+		<English>55% of South Africa controlled</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_GREAT_ARTISTS_SETTLED</Tag>
