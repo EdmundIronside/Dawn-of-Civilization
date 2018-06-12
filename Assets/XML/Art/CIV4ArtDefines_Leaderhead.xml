@@ -142,6 +142,14 @@
 			<NoShaderNIF>art/LeaderHeads/Louis_XIV/louis_xiv_noshader.nif</NoShaderNIF>
 			<BackgroundKFM>art/LeaderHeads/Louis_XIV/louis_xiv_BG.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
+			<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_MANDELA</Type>
+			<Button>Art/Leaderheads/Mandela/mandela.dds</Button>
+			<NIF>Art/Leaderheads/Mandela/Nmandela.nif</NIF>
+			<KFM>Art/Leaderheads/Mandela/gandhi.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Mandela/Nmandela.nif</NoShaderNIF>
+			<BackgroundKFM>Art/Leaderheads/Mandela/gandhi_bg.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_MANSA_MUSA</Type>
 			<Button>,Art/interface/LeaderHeads/Btn_LH_Mali_MansaMusa.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,13</Button>
