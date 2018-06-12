@@ -435,6 +435,14 @@
 		<English>Shaka</English>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_LEADER_MANDELA</Tag>
+		<English>Mandela</English>
+		<French>Mandela</French>
+		<German>Mandela</German>
+		<Italian>Mandela</Italian>
+		<Spanish>Mandela</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_LEADER_SHIVAJI</Tag>
 		<English>Shahuji</English>
 	</TEXT>
