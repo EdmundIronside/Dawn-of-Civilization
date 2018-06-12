@@ -1145,6 +1145,8 @@ enum LeaderHeadTypes			// Exposed to Python
 	RAGNAR,
 	ROOSEVELT,
 	SALADIN,
+	SHAKA,
+	MANDELA,
 	SITTING_BULL,
 	STALIN,
 	SULEIMAN,
@@ -1225,7 +1227,6 @@ enum LeaderHeadTypes			// Exposed to Python
 	KHOSROW,
 	BUMIN,
 	TAMERLANE,
-	SHAKA,
 	NUM_LEADERHEADS
 };
 
