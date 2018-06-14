@@ -8932,10 +8932,10 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MAYAN_HOLKAN, UnitOwner=47, (Native)
+		UnitType=UNIT_MAYAN_HOLKAN, UnitOwner=48, (Native)
 	EndUnit
 	BeginCity
-		CityOwner=47, (Native)
+		CityOwner=48, (Native)
 		CityName=Yax Mutal
 		CityPopulation=2
 		BuildingType=BUILDING_BARRACKS
@@ -9338,13 +9338,13 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MAYAN_HOLKAN, UnitOwner=47, (Native)
+		UnitType=UNIT_MAYAN_HOLKAN, UnitOwner=48, (Native)
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_WORKER, unitowner=48, (Native)
 	EndUnit
 	BeginCity
-		CityOwner=47, (Native)
+		CityOwner=48, (Native)
 		CityName=Chich'en Itz&#225;
 		CityPopulation=2
 		BuildingType=BUILDING_MAYAN_BALL_COURT
@@ -19648,10 +19648,10 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN, UnitOwner=45, (Independent)
+		UnitType=UNIT_CROSSBOWMAN, UnitOwner=46, (Independent)
 	EndUnit
 	BeginCity
-		CityOwner=45, (Independent)
+		CityOwner=46, (Independent)
 		CityName=Marrakus
 		CityPopulation=2
 		BuildingType=BUILDING_GRANARY
@@ -20487,10 +20487,10 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN, UnitOwner=45, (Independent)
+		UnitType=UNIT_CROSSBOWMAN, UnitOwner=46, (Independent)
 	EndUnit
 	BeginCity
-		CityOwner=45, (Independent)
+		CityOwner=46, (Independent)
 		CityName=Burdigala
 		CityPopulation=3
 		BuildingType=BUILDING_BARRACKS
@@ -21249,7 +21249,7 @@ BeginPlot
 		UnitType=UNIT_CROSSBOWMAN, unitowner=47, (Independent2)
 	EndUnit
 	BeginCity
-		CityOwner=46, (Independent2)
+		CityOwner=47, (Independent2)
 		CityName=Barcelona
 		CityPopulation=2
 		BuildingType=BUILDING_GRANARY
@@ -21642,7 +21642,7 @@ BeginPlot
 		UnitType=UNIT_CROSSBOWMAN, unitowner=46, (Independent)
 	EndUnit
 	BeginCity
-		CityOwner=45, (Independent)
+		CityOwner=46, (Independent)
 		CityName=Massilia
 		CityPopulation=3
 		BuildingType=BUILDING_GRANARY
@@ -23098,7 +23098,7 @@ BeginPlot
 		UnitType=UNIT_ARCHER, unitowner=46, (Independent)
 	EndUnit
 	BeginCity
-		CityOwner=45, (Independent)
+		CityOwner=46, (Independent)
 		CityName=Tripolis
 		CityPopulation=2
 		Player46Culture=10, (Independent)
